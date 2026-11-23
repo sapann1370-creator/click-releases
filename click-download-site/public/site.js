@@ -1,0 +1,10 @@
+const fa = n => new Intl.NumberFormat('fa-IR').format(n);
+function safeText(el, value){el.textContent=value||''}
+async function loadSite(){
+  try{
+    const [latestRes,historyRes]=await Promise.all([fetch('/api/latest',{cache:'no-store'}),fetch('/api/releases',{cache:'no-store'})]);
+    if(latestRes.ok){const m=await latestRes.json();safeText(document.getElementById('heroVersion'),m.version);safeText(document.getElementById('versionTitle'),'نسخه '+m.version);safeText(document.getElementById('releaseDate'),m.date?'تاریخ انتشار: '+m.date:'نسخه رسمی منتشر شده است.');const b=document.getElementById('downloadButton');b.href='/api/download/latest';b.classList.remove('disabled');b.removeAttribute('aria-disabled');safeText(b,'دانلود نسخه '+m.version);safeText(document.getElementById('downloadHint'),'فایل نصب رسمی نرم‌افزار کلیک');document.getElementById('heroDownload').href='/api/download/latest';const notes=document.getElementById('notesText');if(Array.isArray(m.notes)&&m.notes.length){notes.replaceWith(Object.assign(document.createElement('ul'),{id:'notesText'}));const ul=document.getElementById('notesText');m.notes.forEach(n=>{const li=document.createElement('li');li.textContent=n;ul.appendChild(li)})}else safeText(notes,'تغییرات این نسخه ثبت نشده است.');}
+    if(historyRes.ok){const list=await historyRes.json();const host=document.getElementById('versionList');host.replaceChildren();if(!list.length){host.innerHTML='<div class="empty">هنوز نسخه‌ای از طریق این سایت منتشر نشده است.</div>'}else list.forEach(m=>{const row=document.createElement('div');row.className='version-row';const info=document.createElement('div');const strong=document.createElement('b');strong.textContent='نسخه '+m.version;const small=document.createElement('small');small.textContent=m.date||'';info.append(strong,document.createElement('br'),small);const a=document.createElement('a');a.className='btn ghost';a.href='/api/download/'+encodeURIComponent(m.version);a.textContent='دانلود';row.append(info,a);host.append(row)})}
+  }catch(e){console.warn('Could not load release information',e)}
+}
+loadSite();
