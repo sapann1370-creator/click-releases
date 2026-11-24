@@ -1,9 +1,9 @@
 {
-  "version": "2.5.6",
+  "version": "2.5.7",
   "date": "۱۴۰۵/۰۹/۰۳",
-  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.5.6/Click-Accounting-Setup-2.5.6.exe",
+  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.5.7/Click-Accounting-Setup-2.5.7.exe",
   "notes": [
-    "انتشار نسخه ۲.۵.۶"
+    "دانلود با نمایش درصد پیشرفت، بررسی SHA-256 و مدیریت خطاهای اتصال"
   ],
-  "sha256": "e3a0046e4c2c98f524faecd0fcd8ec5af6afab88ba92a12f57197fc7873663d2"
+  "sha256": "cc430cafdd49390f2c3ef497e0979e6c6684d76bddc0217fc34ff2abf36a905e"
 }
