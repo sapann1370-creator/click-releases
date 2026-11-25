@@ -1,7 +1,7 @@
 {
-  "version": "2.6.5",
+  "version": "2.6.6",
   "date": "۱۴۰۵/۰۹/۰۴",
-  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.6.5/Click-Accounting-Setup-2.6.5.exe",
+  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.6.6/Click-Accounting-Setup-2.6.6.exe",
   "notes": [
     "کالا و خدمات: موجودی اولیه، قیمت خرید و قیمت فروش برای کالا؛ کالا هم‌زمان در انبار ساخته می‌شود و از انبار هم قابل خرید است",
     "فاکتور فروش موجودی کالاهای انبار را خودکار کم می‌کند",
@@ -15,5 +15,5 @@
     "نمای گرافیکی جدید برای بررسی و دانلود نسخه",
     "بررسی نسخه با تلاش مجدد و پشتیبانی از نشانی جایگزین"
   ],
-  "sha256": "827072ba4a9c3c1342d63b60831dc8a1f075f9321fdbcb8b5dd95e5f885c253d"
+  "sha256": "94720cdf1db3e0cf2138867eea06e0289f04ac3ae5b13e200ef24e01ce1bd2be"
 }
