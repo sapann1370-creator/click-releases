@@ -1,9 +1,9 @@
 {
-  "version": "2.6.0",
-  "date": "۱۴۰۵/۰۹/۰۳",
-  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.6.0/Click-Accounting-Setup-2.6.0.exe",
+  "version": "2.6.2",
+  "date": "۱۴۰۵/۰۹/۰۴",
+  "url": "https://github.com/sapann1370-creator/click-releases/releases/download/v2.6.2/Click-Accounting-Setup-2.6.2.exe",
   "notes": [
-    "بهبود سربرگ کالا و خدمات و انبار"
+    "«مالیات درصدی در فاکتور»، «موجودی و قیمت خرید برای کالا + اتصال به انبار»، «ویرایش قاعده‌های کسر خودکار انبار»، «ظاهر جدید بررسی و دانلود نسخه»، «بهبود چیدمان تنظیمات»."
   ],
-  "sha256": "ad9dfc3d2b5f8bd2a27b75cf421e8c7ab619b2d44eb71bf0d55ad50af7583ae7"
+  "sha256": "55acd99c8d8b4a77962400d93b1d91389141fd957654bad5c77d2530f2262b59"
 }
